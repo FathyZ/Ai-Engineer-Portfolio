@@ -1,3 +1,12 @@
+import voiceagentimg1 from "./assets/images/VoiceAgent1.png";
+import voiceagentimg2 from "./assets/images/VoiceAgent2.png";
+import yoga1 from "./assets/images/Yoga1.png";
+import yoga2 from "./assets/images/Yoga2.png";
+import yoga3 from "./assets/images/Yoga3.png";
+import n8n1 from "./assets/images/N8N-1.png";
+import n8n2 from "./assets/images/N8N-2.png";
+import n8n3 from "./assets/images/N8N-3.png";
+
 export interface Project {
   id: string;
   title: string;
@@ -7,6 +16,7 @@ export interface Project {
   featured: boolean;
   imagePaths: string[];
 }
+
 
 export const PROJECTS: Project[] = [
   {
@@ -18,8 +28,8 @@ export const PROJECTS: Project[] = [
       "A real-time voice intelligence system for ESLSCA University. Features a low-latency RAG pipeline for lead qualification and automated campus tour scheduling.",
     featured: true,
     imagePaths: [
-      "./src/assets/images/VoiceAgent1.png",
-      "./src/assets/images/VoiceAgent2.png",
+      voiceagentimg1,
+      voiceagentimg2,
     ],
   },
   {
@@ -31,9 +41,9 @@ export const PROJECTS: Project[] = [
       "Autonomous agent for a Yoga Center capable of database introspection. Performs real-time reservations, class availability checks, and order processing via structured tool-calling.",
     featured: true,
     imagePaths: [
-      "./src/assets/images/Yoga1.png",
-      "./src/assets/images/Yoga2.png",
-      "./src/assets/images/Yoga3.png",
+      yoga1,
+      yoga2,
+      yoga3,
     ],
   },
   {
@@ -45,9 +55,9 @@ export const PROJECTS: Project[] = [
       "Web-based lead qualification agent utilizing RAG for prospective student inquiries. Automated lead logging and email confirmation workflows.",
     featured: false,
     imagePaths: [
-      "./src/assets/images/N8N-1.png",
-      "./src/assets/images/N8N-2.png",
-      "./src/assets/images/N8N-3.png",
+      n8n1,
+      n8n2,
+      n8n3,
     ],
   },
 ];
