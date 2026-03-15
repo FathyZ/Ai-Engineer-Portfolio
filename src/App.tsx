@@ -1,11 +1,19 @@
-
-import './App.css'
+import { BrowserRouter } from "react-router-dom";
+import CustomCursor from "./components/CustomCursor";
+import Navbar from "./components/Navbar";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-
   return (
-<h1 className='bg-amber-500'>Hello World!</h1>
-  )
+    <BrowserRouter>
+      <main className="bg-brand-black min-h-screen">
+        <CustomCursor />
+        <Navbar />
+        <div className="h-16" />
+        <AppRoutes />
+      </main>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
