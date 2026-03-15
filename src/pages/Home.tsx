@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import NeuralMesh from "../components/NeuralMesh";
 import ProjectCard from "../components/ProjectCard";
 import { PROJECTS } from "../data.ts";
