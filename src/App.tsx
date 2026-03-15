@@ -6,7 +6,7 @@ import AppRoutes from "./routes/AppRoutes";
 function App() {
   return (
     <BrowserRouter>
-      <main className="bg-brand-black min-h-screen">
+      <main className="bg-brand-black min-h-screen ">
         <CustomCursor />
         <Navbar />
         <div className="h-16" />

@@ -10,8 +10,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 px-20 w-full z-40 border-b border-brand-primary/20 bg-brand-black/50 backdrop-blur-md">
-      <div className="w-full mx-auto px-6 h-16 flex items-center justify-between">
+    <nav className="fixed top-0 left-0  w-full z-40 border-b border-brand-primary/20 bg-brand-black/50 backdrop-blur-md">
+      <div className="w-full mx-auto px-6 md:px-20 h-16 flex items-center justify-between">
         
           <span className="font-mono  font-bold  text-md uppercase" data-hover="true">
             Seif Abdelaity 

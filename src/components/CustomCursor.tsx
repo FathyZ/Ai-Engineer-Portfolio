@@ -45,11 +45,11 @@ const CustomCursor: React.FC = () => {
         height: isHovered ? 11 : 6,
         backgroundColor: "#f59e0b", 
         boxShadow: "0px 0px 0px rgba(245, 158, 11, 0)",
+        mixBlendMode: "difference", 
       }}
       style={{ x: mouseX, y: mouseY, translateX: "-50%", translateY: "-50%" }}
     />
 
-    {/* Trailing Ring - Always Gold, but expands and thickens on hover */}
     <motion.div
       className="fixed top-0 left-0 border rounded-full pointer-events-none z-9998"
       animate={{
