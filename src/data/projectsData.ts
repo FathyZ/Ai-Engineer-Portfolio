@@ -1,21 +1,13 @@
-import voiceagentimg1 from "./assets/images/VoiceAgent1.png";
-import voiceagentimg2 from "./assets/images/VoiceAgent2.png";
-import yoga1 from "./assets/images/Yoga1.png";
-import yoga2 from "./assets/images/Yoga2.png";
-import yoga3 from "./assets/images/Yoga3.png";
-import n8n1 from "./assets/images/N8N-1.png";
-import n8n2 from "./assets/images/N8N-2.png";
-import n8n3 from "./assets/images/N8N-3.png";
+import voiceagentimg1 from "../assets/images/VoiceAgent1.png";
+import voiceagentimg2 from "../assets/images/VoiceAgent2.png";
+import yoga1 from "../assets/images/Yoga1.png";
+import yoga2 from "../assets/images/Yoga2.png";
+import yoga3 from "../assets/images/Yoga3.png";
+import n8n1 from "../assets/images/N8N-1.png";
+import n8n2 from "../assets/images/N8N-2.png";
+import n8n3 from "../assets/images/N8N-3.png";
 
-export interface Project {
-  id: string;
-  title: string;
-  category: string;
-  tech: string[];
-  description: string;
-  featured: boolean;
-  imagePaths: string[];
-}
+import type { Project } from "../types.ts";
 
 
 export const PROJECTS: Project[] = [
