@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import { PROJECTS } from "../data/projectsData";
 import { Reveal } from "../components/animations/Reveal";
 import NeuralMesh from "../components/NeuralMesh";
