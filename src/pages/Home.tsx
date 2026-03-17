@@ -5,6 +5,7 @@ import { PROJECTS } from "../data/projectsData.ts";
 import { Reveal } from "../components/animations/Reveal.tsx";
 import Capabilities from "../components/Capabilities.tsx";
 import HomeScroller from "../components/HomeScroller.tsx";
+import { Link } from "react-router-dom";
 
 const titles = [
   "AI Engineer.",
@@ -68,17 +69,16 @@ const Home = () => {
       <HomeScroller></HomeScroller>
 
       <Reveal>
-        <p className=" mt-36 px-6 md:px-20 font-mono text-brand-primary font-light text-lg tracking-tighter text-center md:text-4xl md:text-left animate-flicker">
-          01 // SYSTEM CAPABILITIES
+        <p className=" mt-36 px-6 md:px-20 font-mono text-brand-primary font-light text-lg tracking-tight text-center md:text-2xl md:text-left animate-flicker">
+          [01] TECHNICAL_STACK
         </p>
       </Reveal>
-      <Reveal delay={0.5}>
+      
         <Capabilities></Capabilities>
-      </Reveal>
-      <div className="px-6 md:px-20 flex flex-col md:flex-row justify-between items-center ">
-        <h1 className="font-lora text-4xl md:text-6xl mb-10 font-bold text-white text-center">
-          Featured Projects
-        </h1>
+      <div className="px-6 md:px-20 mt-16 mb-8 flex flex-col md:flex-row justify-between items-center ">
+        <p className="  font-mono text-brand-primary font-light text-lg tracking-tight text-center md:text-2xl md:text-left animate-flicker">
+          [02] FEATURED_SYSTEMS
+        </p>
         <a
           href="#projects"
           className="font-primary hidden md:inline-block  text-brand-primary  text-md md:text-xl hover:underline underline-offset-2 transition-all duration-500"
@@ -88,11 +88,13 @@ const Home = () => {
       </div>
       <div className="px-6 md:px-20 mb-20 grid grid-cols-1 xl:grid-cols-2 gap-10">
         {featuredProjects.map((project) => (
+          <Link to={`/projects/${project.id}`} key={project.id} className="w-full">
           <ProjectCard
             key={project.id}
             {...project}
             imagePath={project.imagePaths[0]}
-          />
+            />
+            </Link>
         ))}
 
         <a

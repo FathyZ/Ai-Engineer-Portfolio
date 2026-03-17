@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, category, tech, description , imagePath }: ProjectCardProps) => {
   return (
-    <div className="group relative bg-brand-gray-muted backdrop-blur-sm  p-8 transition-all duration-500 hover:border-brand-primary rounded-lg"data-hover="true">
+    <div className="group relative bg-transparent backdrop-blur-sm border border-brand-gray-muted p-8 transition-all duration-500 hover:border-brand-primary rounded-lg"data-hover="true">
       <div className="flex justify-between items-center mb-6 " data-hover="true">
         <span className="font-mono text-xs text-brand-gray group-hover:text-brand-primary tracking-tighter border border-brand-gray group-hover:border-brand-primary-muted w-fit px-2 py-0.5 transition-all duration-500">
           {category}
