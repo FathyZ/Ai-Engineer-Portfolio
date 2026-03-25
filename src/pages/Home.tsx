@@ -97,12 +97,13 @@ const Home = () => {
             </Link>
         ))}
 
-        <a
-          href="#projects"
-          className="font-primary inline-block md:hidden text-center  text-brand-primary  text-md md:text-xl hover:underline underline-offset-2 transition-all duration-500"
-        >
+       <Link to="/projects" className="w-full flex justify-center">
+       <a
+          className="font-primary inline-block md:hidden text-center  text-brand-primary  text-md md:text-xl hover:underline underline-offset-2 transition-all duration-500 mb-8"
+          >
           View All Projects
         </a>
+          </Link> 
       </div>
     </>
   );

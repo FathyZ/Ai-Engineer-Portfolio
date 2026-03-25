@@ -10,7 +10,7 @@ const Capabilities = () => {
           <Reveal delay={index * 0.1}>
 
 
-          <div key={cap.title} className="group flex flex-col items-center justify-start bg-transparent backdrop-blur-xs hover:border-brand-primary border border-brand-gray-muted rounded-lg p-8 text-center transform hover:scale-105 transition-all duration-500 " data-hover="true">
+          <div key={cap.title} className="h-full group flex flex-col items-center justify-start bg-transparent backdrop-blur-xs hover:border-brand-primary border border-brand-gray-muted rounded-lg p-8 text-center transform hover:scale-105 transition-all duration-500 " data-hover="true">
             <div className=" mb-4 flex  gap-2">
             <cap.IconComponent className="w-7 h-7 text-brand-gray group-hover:text-brand-primary transition-colors duration-500  "></cap.IconComponent>
             <h3 className="font-primary text-xl uppercase font-bold text-white mb-6 tracking-tight">

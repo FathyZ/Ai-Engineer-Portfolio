@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 import ProjectDetails from "../pages/ProjectDetails";
+import BehindTheScenes from "../pages/BehindTheScenes";
 
 const AppRoutes = () => {
   return (
@@ -9,7 +10,7 @@ const AppRoutes = () => {
       <Route path="/" element={<Home/>} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/projects/:projectId" element={<ProjectDetails/>} />
-      <Route path="/behind-the-scenes" element={<h1>Behind the Scenes</h1>} />
+      <Route path="/behind-the-scenes" element={<BehindTheScenes />} />
       <Route path="/contact" element={<h1>Contact</h1>} />
       
       <Route path="*" element={<h1>Page Not Found</h1>} />

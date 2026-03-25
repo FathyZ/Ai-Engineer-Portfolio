@@ -10,10 +10,10 @@ const ProjectCard = ({ title, category, tech, description , imagePath }: Project
   return (
     <div className="group relative bg-transparent backdrop-blur-sm border border-brand-gray-muted p-8 transition-all duration-500 hover:border-brand-primary rounded-lg"data-hover="true">
       <div className="flex justify-between items-center mb-6 " data-hover="true">
-        <span className="font-mono text-xs text-brand-gray group-hover:text-brand-primary tracking-tighter border border-brand-gray group-hover:border-brand-primary-muted w-fit px-2 py-0.5 transition-all duration-500">
+        <span className="font-mono text-xs text-brand-gray group-hover:text-brand-primary tracking-tighter text-center border border-brand-gray group-hover:border-brand-primary-muted  px-2 py-1 transition-all duration-500">
           {category}
         </span>
-        <div className="flex gap-3">
+        <div className="flex gap-2 pl-3 flex-wrap">
           {tech.map((t) => (
             <span key={t} className="font-mono text-xs md:text-sm text-brand-gray uppercase tracking-tighter" data-hover="true">
               {t}
@@ -33,7 +33,7 @@ const ProjectCard = ({ title, category, tech, description , imagePath }: Project
         {description}
       </p>
 
-      <a href="" className="font-primary text-brand-primary text-sm md:text-lg hover:underline underline-offset-2 transition-all duration-500" data-hover="true">
+      <a  className="font-primary text-brand-primary text-sm md:text-lg hover:underline underline-offset-2 transition-all duration-500" data-hover="true">
         View Project
       </a>
 
