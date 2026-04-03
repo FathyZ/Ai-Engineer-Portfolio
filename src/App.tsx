@@ -3,6 +3,7 @@ import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 import AppRoutes from "./routes/AppRoutes";
 import ScrollToTop from "./utils/ScrollToTop";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <div className="h-16" />
         <AppRoutes />
+        <Footer/>
       </main>
     </BrowserRouter>
   );

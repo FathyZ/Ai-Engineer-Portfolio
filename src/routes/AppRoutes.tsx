@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 import ProjectDetails from "../pages/ProjectDetails";
 import BehindTheScenes from "../pages/BehindTheScenes";
+import Contact from "../pages/Contact";
 
 const AppRoutes = () => {
   return (
@@ -11,7 +12,7 @@ const AppRoutes = () => {
       <Route path="/projects" element={<Projects />} />
       <Route path="/projects/:projectId" element={<ProjectDetails/>} />
       <Route path="/behind-the-scenes" element={<BehindTheScenes />} />
-      <Route path="/contact" element={<h1>Contact</h1>} />
+      <Route path="/contact" element={<Contact />} />
       
       <Route path="*" element={<h1>Page Not Found</h1>} />
     </Routes>
