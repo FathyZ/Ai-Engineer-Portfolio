@@ -41,7 +41,7 @@ const BehindTheScenes = () => {
             ].map((p, i) => (
               <Reveal key={i} delay={i * 0.1}>
                 <div className="group border-b border-white/5 pb-8 hover:border-brand-primary/50 transition-colors">
-                  <h3 className="font-lora italic text-3xl mb-4 group-hover:translate-x-4 transition-transform duration-500">
+                  <h3 className="font-lora italic text-2xl mb-4 group-hover:translate-x-4 transition-transform duration-500">
                     {p.title}
                   </h3>
                   <p className="text-brand-gray text-lg max-w-xl">{p.desc}</p>
