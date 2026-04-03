@@ -12,7 +12,7 @@ const BehindTheScenes = () => {
             <span className="font-mono text-brand-primary text-xs tracking-[0.5em] mb-4 block uppercase">
               // POSITION: GENERATIVE_AI_ENGINEER
             </span>
-            <h1 className="text-7xl md:text-9xl font-lora font-bold italic leading-[0.8] mb-12">
+            <h1 className="text-6xl md:text-9xl font-lora font-bold italic leading-[0.8] mb-12">
               Architecting <br /> <span className="text-brand-primary text-glow">Action.</span>
             </h1>
             <p className="text-2xl md:text-3xl font-light text-brand-gray max-w-3xl leading-relaxed">
