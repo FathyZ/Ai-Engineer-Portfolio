@@ -22,7 +22,7 @@ const ProjectDetails = () => {
               <span className="font-mono text-brand-primary text-xs tracking-[0.5em] mb-4 block animate-flicker">
                 [PROJECT_FILE_{project.id}]
               </span>
-              <h2 className="text-6xl lg:text-9xl font-lora font-bold italic leading-[0.8] mb-8">
+              <h2 className="text-4xl lg:text-9xl font-lora font-bold italic leading-[0.8] mb-8">
                 {project.title}
               </h2>
             </div>

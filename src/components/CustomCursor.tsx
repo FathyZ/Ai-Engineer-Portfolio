@@ -3,7 +3,8 @@ import { motion, useMotionValue, useSpring } from 'framer-motion';
 
 const CustomCursor: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
-  
+  const [isMobile, setIsMobile] = useState(false);
+
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -11,10 +12,22 @@ const CustomCursor: React.FC = () => {
   const ringY = useSpring(mouseY, { stiffness: 150, damping: 20 });
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      mouseX.set(e.clientX);
-      mouseY.set(e.clientY);
+    const checkDevice = () => {
+      const hasHover = window.matchMedia("(hover: hover)").matches;
+      const isSmallScreen = window.innerWidth < 768;
+      setIsMobile(!hasHover || isSmallScreen);
     };
+    checkDevice();
+    window.addEventListener("resize", checkDevice);
+
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isMobile) {
+
+        mouseX.set(e.clientX);
+        mouseY.set(e.clientY);
+      }
+    };
+
 
     const handleMouseOver = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
@@ -34,7 +47,11 @@ const CustomCursor: React.FC = () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseover', handleMouseOver);
     };
-  }, [mouseX, mouseY]);
+  }, [mouseX, mouseY, isMobile]);
+
+  if (isMobile) {
+    return null;
+  }
 
   return (
   <>
